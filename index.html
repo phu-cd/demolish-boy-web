@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#d8e7dd" />
+    <title>Demolish Boy | Test Site</title>
+  </head>
+  <body>
+    <main class="site" aria-label="Demolition test site">
+      <div id="scene" class="scene" aria-label="Third-person demolition test site"></div>
+
+      <header class="masthead">
+        <a class="wordmark" href="./" aria-label="Demolish Boy home">
+          <span class="wordmark-mark" aria-hidden="true">D.</span>
+          <span>DEMOLISH<br />BOY</span>
+        </a>
+        <div class="masthead-meta">
+          <span class="live-dot" aria-hidden="true"></span>
+          <span>TEST SITE <b>01</b></span>
+        </div>
+      </header>
+
+      <section class="site-label" aria-label="Site status">
+        <p class="eyebrow">STRUCTURAL STUDY <span>—</span> 001</p>
+        <h1 id="map-title">The<br /><em>Blockhouse.</em></h1>
+        <p class="site-description">A small assembly of big ideas.</p>
+      </section>
+
+      <aside class="readout" aria-label="Structure readout">
+        <div class="readout-heading"><span id="map-name">Brickhouse Test Assembly</span><span class="readout-index">A—01</span></div>
+        <label class="map-picker"><span>TEST MAP</span><select id="map-selector" aria-label="Select test map"><option value="brickhouse">01 / BRICKHOUSE</option><option value="timberbrick-manor">02 / TIMBERBRICK MANOR</option></select></label>
+        <div class="readout-row"><span>Condition</span><strong><i id="building-condition-dot"></i><span id="building-condition">INTACT</span></strong></div>
+        <div class="readout-row"><span>Material</span><strong id="map-material">CLAY / CONCRETE</strong></div>
+        <div class="readout-row"><span>Block count</span><strong id="block-count">120</strong></div>
+        <div class="readout-row"><span>Camera view</span><strong id="camera-mode">STANDARD</strong></div>
+        <div class="readout-row"><span>PLAYER READY</span><strong><i id="player-state-dot"></i><span id="player-state">GROUNDED</span></strong></div>
+        <div class="readout-row"><span>Target durability</span><strong id="target-durability">-- / --</strong></div>
+        <div class="readout-row"><span>BOMB</span><strong><span id="bomb-status">REMOVED</span>&nbsp; <span id="bomb-countdown">--</span></strong></div>
+        <div class="readout-row"><span>INVERT VERTICAL</span><button class="invert-button" id="invert-vertical" type="button" aria-label="Invert vertical mouse look" aria-pressed="false" title="Invert vertical mouse look">OFF</button></div>
+        <div class="tool-slots" role="group" aria-label="Equipment slots">
+          <button class="tool-slot" type="button" data-tool-slot="1" aria-pressed="false" title="Equip hammer (1)"><kbd>1</kbd><span>HAMMER</span></button>
+          <button class="tool-slot" type="button" data-tool-slot="2" aria-pressed="false" aria-label="Bomb mode: select with 2, left click a reachable surface to place, press F near it to ignite" title="2: select bomb · Left click: place · F: ignite nearby bomb"><kbd>2</kbd><span>BOMB</span></button>
+          <button class="tool-slot" type="button" data-tool-slot="3" aria-pressed="false" title="Empty slot (3)"><kbd>3</kbd><span>EMPTY</span></button>
+        </div>
+        <div class="readout-rule" aria-hidden="true"><span></span></div>
+        <p class="readout-foot" id="camera-instruction">CLICK SCENE TO LOOK</p>
+      </aside>
+
+      <footer class="footer-bar">
+        <span class="footer-controls" aria-label="Controls">
+          <kbd>WASD</kbd><span>MOVE</span><kbd>1</kbd><span>HAMMER</span><kbd>2</kbd><span>BOMB</span><kbd>F</kbd><span>IGNITE</span>
+        </span>
+        <span class="footer-stage"><b>01</b> <span>SCENE STUDY</span></span>
+        <span class="footer-coord footer-right">SCALE&nbsp;&nbsp; 1 : 1</span>
+      </footer>
+      <div class="crosshair" id="crosshair" aria-hidden="true">+</div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
